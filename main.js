@@ -46,7 +46,7 @@ function updateColors() {
 function checkForColor(color) {
   let returnValue = [];
   data.bodies[0].childs.forEach((e) => {
-    if (e.color == color.replaceAll("#", "").toLowerCase()) {
+    if (e.color == color.replaceAll("#", "").toUpperCase()) {
       returnValue.push(e);
     }
   });
